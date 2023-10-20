@@ -1,11 +1,12 @@
 import './App.css';
 import BookingPage from './pages/BookingPage';
+import Main from './components/Main'
 
 function App() {
   return (
     <div className="App">
       Homepage
-      <BookingPage />
+      <Main />
 
     </div>
   );
