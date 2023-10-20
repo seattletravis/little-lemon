@@ -42,5 +42,17 @@ form {
   display: grid;
   max-width: 200px;
   gap: 20px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  align-items: left;
+}
 
+form div {
+  padding: 20px;
+}
+
+.flex {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
