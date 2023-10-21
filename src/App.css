@@ -22,9 +22,21 @@ form {
   justify-content: center;
 }
 
+.yellowButton {
+  color: black;
+  font-size: 1.5vw;
+  font-weight: 500;
+  background-color: #f4ce14;
+  padding: .5vw 1vw .5vw 1vw;
+  border-radius: .7vw;
+}
+
+.yellowButton:hover {
+  font-weight: 600;
+}
+
 .App{
   width: 100vw;
-  height: 100%;
   border: yellow solid 3px;
 }
 
@@ -99,6 +111,7 @@ nav a {
 
 .headerLeft p {
   width: 32vw;
+  margin-bottom: 4vw;
 }
 
 .headerRight {
@@ -111,4 +124,32 @@ nav a {
   width: 30vw;
   border: black 1px solid;
   border-radius: .5vw;
+}
+
+.highlightContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border: solid red 3px;
+  margin-top: 10vw;
+}
+
+.highlightTop {
+  display: flex;
+  margin-left: 10vw;
+
+  width: 74vw;
+  justify-content: space-between;
+  border: solid green 3px
+}
+
+
+
+.highlightBottom {
+  height: 40vw;
+  border: solid blue 3px;
+  width: 74vw;
+  margin-left: 10vw;
+  margin-top: 4vw;
+
 }
