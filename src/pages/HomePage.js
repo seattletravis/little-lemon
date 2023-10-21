@@ -1,13 +1,18 @@
 import React from "react";
 import food1 from "../images/food1.avif"
+import NavigationBar from '../components/NavigationBar';
 
 //style
-import "../pages/HomePage.css"
+import "./HomePage.css"
+import Header from '../components/Header';
 
-function Header() {
-    return(
-        <header>
-        <section className='homeSection'>
+function HomePage() {
+  return(
+    <div className='home'>
+      <header>
+        <NavigationBar />
+        <Header />
+        {/* <section className='homeSection'>
         <div>
         <h2>Little Lemon</h2>
         <h3>Chicago</h3>
@@ -16,9 +21,10 @@ function Header() {
         <div>
             <img className="image" src={food1} alt='menu item image' />
         </div>
-        </section>
-        </header>
-    )
+        </section> */}
+      </header>
+    </div>
+  )
 }
 
-export default Header;
+export default HomePage;

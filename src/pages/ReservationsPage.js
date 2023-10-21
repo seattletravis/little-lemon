@@ -1,14 +1,14 @@
-import BookingForm from "../components/BookingForm"
+import ReservationsForm from "../components/ReservationsForm"
 // import Heading from '../sections/reservePages/Heading';
-// import ReservationForm from '../sections/reservePages/BookingForm';
+// import ReservationForm from '../sections/reservePages/ReservationsForm';
 import {useReducer} from 'react';
 import {fetchAPI} from '../components/BookingsAPI'
 
 
 //styles
-import "../App.css"
+import "./ReservationsPage.css"
 
-function BookingPage() {
+function ReservationsPage() {
 
   function updateTimes(date) {
     return (
@@ -21,10 +21,10 @@ const output = fetchAPI(new Date());
 const [availableTimes, dispatch] = useReducer(updateTimes, output);
 
   return (
-    <div className='flex'>
-      <BookingForm availableTimes={availableTimes} updateTimes={dispatch}/>
+    <div>
+      <ReservationsForm availableTimes={availableTimes} updateTimes={dispatch}/>
     </div>
   )
 }
 
-export default BookingPage;
+export default ReservationsPage;

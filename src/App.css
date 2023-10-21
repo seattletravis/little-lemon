@@ -16,9 +16,6 @@ form {
   align-items: left;
 }
 
-form div {
-  padding: 20px;
-}
 
 .flex {
   display: flex;
@@ -27,29 +24,21 @@ form div {
 }
 
 .App{
-  width: 99vw;
+  width: 98vw;
   height: 100%;
+  border: yellow solid 3px;
 }
-
-nav {
-  /* display: inline-block; */
-  width: 99vw;
-  height: 4vw;
-  text-align: center;
-  justify-content: center;
-
-  }
 
 nav h1 {
   display: flex;
   font-size: 2vw;
   float: left;
-  margin-right: 8vw;
+  margin-right: 6vw;
 }
 nav ul{
   display: flex;
   align-items: center;
-  width: 100vw;
+  width: 98vw;
   background-color: yellow;
   border: solid 3px blue
 }

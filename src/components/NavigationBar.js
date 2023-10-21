@@ -7,15 +7,16 @@ import { Link } from 'react-router-dom';
 function NavigationBar({title}){
 
   const menuItems = [
-    {id: 1, link: '', title: 'Home'},
-    {id: 2, link: 'about', title: 'About'},
-    {id: 3, link: 'menu', title: 'Menu'},
-    {id: 4, link: 'reservations', title: 'Reservations'},
-    {id: 5, link: 'order', title: 'Order Online'},
-    {id: 5, link: 'login', title: 'Login'},
+    {id: 1, link: '/', title: 'Home'},
+    {id: 2, link: '/about', title: 'About'},
+    {id: 3, link: '/menu', title: 'Menu'},
+    {id: 4, link: '/reservations', title: 'Reservations'},
+    {id: 5, link: '/order', title: 'Order Online'},
+    {id: 5, link: '/login', title: 'Login'},
   ]
 
 return(
+  <div>
       <nav>
           <ul>
             <h1>Little Lemon</h1>
@@ -25,8 +26,8 @@ return(
               </Link>
             ))}
           </ul>
-
       </nav>
+    </div>
   )
 }
 
