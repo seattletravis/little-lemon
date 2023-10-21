@@ -30,6 +30,8 @@ function Main() {
         }
         return result;
     };
+
+
     const submitAPI = function(formData) {
         return true;
     };
@@ -46,6 +48,8 @@ function Main() {
             navigate("/confirmed")
         }
     }
+
+    console.log(initializeTimes)
 
     return(
         <main>

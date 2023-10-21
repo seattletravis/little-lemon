@@ -25,7 +25,7 @@ function BookingForm(props) {
   const handleSubmit = (e) => {
     e.preventDefault()
     setSubmitText("Thank you")
-    // props.submitForm(e)
+    props.submitForm(e)
   }
 
 
@@ -66,8 +66,8 @@ function BookingForm(props) {
             </div>
             <div>
               <label htmlFor="occasion">Occasion</label>
-              <select 
-                onChange={e => setOccasion(e.target.value)} 
+              <select
+                onChange={e => setOccasion(e.target.value)}
                 id="occasion">
                 value={occasion}
                 <option>Birthday</option>
