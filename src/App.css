@@ -154,10 +154,19 @@ nav a {
 
 .highlightCard {
   flex-direction: row;
-  width: 20vw;
+  font-size: 1.5vw;
+  width: 23vw;
   height: 40vw;
   border: grey 3px solid;
   border-radius: 2vw 2vw 0vw 0vw;
+}
+
+.highlightCard img {
+  object-fit: cover;
+  height: 16vw;
+  width: 23vw;
+  border-radius: 2vw 2vw 0vw 0vw;
+
 }
 
 .price {
