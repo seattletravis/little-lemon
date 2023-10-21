@@ -6,7 +6,7 @@ import {fetchAPI} from '../components/BookingsAPI'
 
 
 //styles
-import "./BookingPage.css"
+import "../App.css"
 
 function BookingPage() {
 
