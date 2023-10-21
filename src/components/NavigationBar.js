@@ -20,7 +20,7 @@ return(
           <ul>
             <h1>Little Lemon</h1>
             {menuItems.map(menu => (
-              <Link className='navButtons' to={`${menu.link}`}>
+              <Link to={`${menu.link}`}>
                 <li key={menu.id} className='navButtons'>{menu.title}</li>
               </Link>
             ))}

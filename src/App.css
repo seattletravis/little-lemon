@@ -34,28 +34,35 @@ form div {
 nav {
   /* display: inline-block; */
   width: 99vw;
-  height: 5vw;
+  height: 4vw;
   text-align: center;
   justify-content: center;
-  background-color: yellow;
-  border: solid 3px blue
+
   }
 
 nav h1 {
   display: flex;
   font-size: 2vw;
   float: left;
+  margin-right: 8vw;
 }
 nav ul{
-  list-style: none;
-  margin: 0 2px;
-  padding: 0;
+  display: flex;
+  align-items: center;
+  width: 100vw;
+  background-color: yellow;
+  border: solid 3px blue
 }
 
 nav li {
     display: inline-block;
-    padding: 0 2vw 0 2vw;
+    padding: 0 0vw 0 4vw;
     font-size: 2vw;
+}
+
+nav li:hover{
+  color: green;
+  font-weight: 600;
 }
 
 nav a {
