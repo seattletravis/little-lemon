@@ -143,13 +143,25 @@ nav a {
   border: solid green 3px
 }
 
-
-
 .highlightBottom {
-  height: 40vw;
+  display: flex;
+  justify-content: space-between;
   border: solid blue 3px;
   width: 74vw;
   margin-left: 10vw;
   margin-top: 4vw;
+}
 
+.highlightCard {
+  flex-direction: row;
+  width: 20vw;
+  height: 40vw;
+  border: grey 3px solid;
+  border-radius: 2vw 2vw 0vw 0vw;
+}
+
+.price {
+  display: flex;
+  justify-content: space-between;
+  margin: 1vw;
 }
