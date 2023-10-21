@@ -1,6 +1,11 @@
+import NavigationBar from '../components/NavigationBar';
+
 function OrderPage() {
   return (
-    <div>Order Page</div>
+    <div>
+      <NavigationBar />
+      <div>Order Page</div>
+    </div>
   )
 }
 

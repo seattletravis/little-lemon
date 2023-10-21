@@ -8,6 +8,8 @@ import MenuPage from '../pages/MenuPage';
 import OrderPage from '../pages/OrderPage';
 import LoginPage from '../pages/LoginPage';
 import HomePage from '../pages/HomePage';
+import ReservationsPage from '../pages/ReservationsPage';
+
 
 
 function Main() {
@@ -63,7 +65,7 @@ function Main() {
                     <Route exact path="/" element={<HomePage />} />
                     <Route exact path="/about" element={<AboutPage />} />
                     <Route exact path="/menu" element={<MenuPage />} />
-                    <Route path="/reservations" element={<Bookings availableTimes={state} dispatch={dispatch} submitForm={submitForm}/>} />
+                    <Route path="/reservations" element={<ReservationsPage />} />
                     <Route exact path="/order" element={<OrderPage />} />
                     <Route exact path="/login" element={<LoginPage />} />
                     <Route path="/confirmation" element={<ConfirmedBooking/> } />

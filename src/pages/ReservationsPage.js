@@ -3,6 +3,7 @@ import ReservationsForm from "../components/ReservationsForm"
 // import ReservationForm from '../sections/reservePages/ReservationsForm';
 import {useReducer} from 'react';
 import {fetchAPI} from '../components/BookingsAPI'
+import NavigationBar from '../components/NavigationBar';
 
 
 //styles
@@ -22,6 +23,7 @@ const [availableTimes, dispatch] = useReducer(updateTimes, output);
 
   return (
     <div>
+      <NavigationBar />
       <ReservationsForm availableTimes={availableTimes} updateTimes={dispatch}/>
     </div>
   )

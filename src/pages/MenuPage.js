@@ -1,6 +1,11 @@
+import NavigationBar from '../components/NavigationBar';
+
 function MenuPage() {
   return (
-    <div>Menu Page</div>
+    <div>
+      <NavigationBar />
+      <div>Menu Page</div>
+    </div>
   )
 }
 

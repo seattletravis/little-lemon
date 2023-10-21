@@ -1,6 +1,11 @@
+import NavigationBar from '../components/NavigationBar';
+
 function LoginPage() {
   return (
-    <div>Login Page</div>
+    <div>
+      <NavigationBar />
+      <div>Login Page</div>
+    </div>
   )
 }
 
