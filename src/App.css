@@ -23,33 +23,36 @@ form {
 }
 
 .App{
-  width: 98vw;
+  width: 100vw;
   height: 100%;
   border: yellow solid 3px;
 }
 
-nav h1 {
+
+
+nav img {
+  width: 15vw;
   display: flex;
   font-size: 2vw;
   float: left;
-  margin-right: 6vw;
+
 }
 nav ul{
   display: flex;
+  margin-left: 10vw;
+
   align-items: center;
-  width: 98vw;
-  background-color: yellow;
-  border: solid 3px blue
+  width: 100vw;
 }
 
 nav li {
     display: inline-block;
     padding: 0 0vw 0 4vw;
-    font-size: 2vw;
+    font-size: 1.5vw;
 }
 
 nav li:hover{
-  color: green;
+  color: #495e57;
   font-weight: 600;
 }
 
@@ -60,17 +63,52 @@ nav a {
 }
 
 .header {
-  width: 98vw;
+  width: 100vw;
   border: red 3px solid;
 }
 
 .headerSection {
-  background-color: aquamarine;
-  font-size: 2vw;
+  background-color: #495e57;
+  font-size: 1.5vw;
   padding-bottom: 2vw;
+  height: 44vw;
 }
 
-.headerimage {
-  width: 40vw;
-  padding-top: 2vw;
+.headerSection {
+  color: white;
+}
+
+.headerContainer {
+  display: flex;
+}
+
+.headerLeft {
+  flex: 1;
+  margin-top: 8vw;
+  margin-left: 10vw;
+  border: solid 3px blue;
+}
+
+.headerLeft h2 {
+  color: #f4ce14;
+}
+
+.headerLeft h3 {
+  margin: 1vw 0vw 2vw 0vw;
+}
+
+.headerLeft p {
+  width: 32vw;
+}
+
+.headerRight {
+  margin-top: 3vw;
+  margin-right: 14vw;
+  border: solid 5px red;
+}
+
+.headerImage {
+  width: 30vw;
+  border: black 1px solid;
+  border-radius: .5vw;
 }

@@ -1,4 +1,5 @@
 import React from 'react';
+import logo from "../images/littlelemon_logo.png"
 
 //style
 import "../App.css"
@@ -19,7 +20,7 @@ return(
   <div>
       <nav>
           <ul>
-            <h1>Little Lemon</h1>
+            <img className="navLogo" src={logo} alt='little lemon logo'></img>
             {menuItems.map(menu => (
               <Link to={`${menu.link}`}>
                 <li key={menu.id} className='navButtons'>{menu.title}</li>
