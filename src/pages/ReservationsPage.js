@@ -4,6 +4,7 @@ import ReservationsForm from "../components/ReservationsForm"
 import {useReducer} from 'react';
 import {fetchAPI} from '../components/BookingsAPI'
 import NavigationBar from '../components/NavigationBar';
+import Footer from '../components/Footer'
 
 
 //styles
@@ -24,7 +25,8 @@ const [availableTimes, dispatch] = useReducer(updateTimes, output);
   return (
     <div>
       <NavigationBar />
-      <ReservationsForm availableTimes={availableTimes} updateTimes={dispatch}/>
+      <ReservationsForm />
+      <Footer />
     </div>
   )
 }

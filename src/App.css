@@ -369,3 +369,65 @@ form {
 .menuTitle {
   font-size: 2vw;
 }
+
+.loginContainer {
+  padding-bottom: 10vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white
+}
+
+.loginForm {
+  width: 20vw;
+  font-size: 1vw;
+  border: black 2px solid;
+  border-radius: 2vw;
+  padding: 2vw 4vw 2vw 4vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #495e57;
+}
+
+.loginField {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-bottom: 1vw;
+  font-size: 1.5vw;
+}
+
+.loginField input {
+  width: 15vw;
+  height: 1.5vw;
+  font-size: 1vw;
+  border-radius: .25vw;
+}
+
+.loginIcon {
+  font-size: 6vw;
+  margin: 4vw 0vw 3vw 0vw;
+}
+
+.loginButton {
+  color: #495e57;
+  font-size: 1.5vw;
+  font-weight: 500;
+  background-color: #f4ce14;
+  padding: .5vw 1.5vw .5vw 1.5vw;
+  border-radius: .7vw;
+  margin-top: 1vw;
+}
+
+.example {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: black;
+  font-size: 1vw;
+  padding-top: 8vw;
+  padding-bottom: 1vw;
+
+}
