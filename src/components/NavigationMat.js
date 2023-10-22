@@ -1,11 +1,10 @@
 import React from 'react';
-import logo from "../images/littlelemon_logo.png"
 
 //style
 import "../App.css"
 import { Link } from 'react-router-dom';
 
-function NavigationBar(){
+function NavigationMat(){
 
   const menuItems = [
     {id: 1, link: '/', title: 'Home'},
@@ -18,12 +17,11 @@ function NavigationBar(){
 
 return(
   <div>
-      <nav className='navBar'>
+      <nav className='navMat'>
           <ul>
-            <img className="navLogo" src={logo} alt='little lemon logo'></img>
             {menuItems.map(menu => (
               <Link to={`${menu.link}`}>
-                <li key={menu.id} className='navButtons'>{menu.title}</li>
+                <li key={menu.id} className='navMatButtons'>{menu.title}</li>
               </Link>
             ))}
           </ul>
@@ -32,4 +30,4 @@ return(
   )
 }
 
-export default NavigationBar;
+export default NavigationMat;
