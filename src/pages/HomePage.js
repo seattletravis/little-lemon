@@ -19,7 +19,6 @@ function HomePage() {
         <Testimonials />
         <About />
         <Footer />
-        <div>You've Reached the Bottom</div>
     </div>
   )
 }

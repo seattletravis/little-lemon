@@ -1,10 +1,13 @@
 import NavigationBar from '../components/NavigationBar';
+import Menu from '../components/Menu';
+import Footer from '../components/Footer';
 
 function OrderPage() {
   return (
     <div>
       <NavigationBar />
-      <div>Order Page</div>
+      <Menu />
+      <Footer />
     </div>
   )
 }

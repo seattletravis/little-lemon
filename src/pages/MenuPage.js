@@ -1,10 +1,13 @@
+import Footer from '../components/Footer';
 import NavigationBar from '../components/NavigationBar';
+import Menu from "../components/Menu"
 
 function MenuPage() {
   return (
     <div>
       <NavigationBar />
-      <div>Menu Page</div>
+      <Menu />
+      <Footer />
     </div>
   )
 }

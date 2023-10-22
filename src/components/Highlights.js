@@ -10,7 +10,7 @@ function Highlights() {
   return (
     <div className='highlightContainer'>
       <div className='highlightTop'>
-        <h2>This weeks specials!</h2>
+        <h2 className='highlightTitle'>This weeks specials!</h2>
         <Link to="/order">
           <button className='yellowButton'>Online Menu</button>
         </Link>
