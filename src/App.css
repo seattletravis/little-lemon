@@ -391,6 +391,7 @@ form {
   border-radius: 1vw;
   background-color: #495e57;
   width: 30vw;
+  color: #d9d9d9;
 }
 
 .loginContainer h2 {
@@ -423,4 +424,19 @@ form {
   padding: 0.5vw 1.5vw 0.5vw 1.5vw;
   border-radius: .7vw;
   margin: 1vw 0vw 6vw 0vw;
+}
+
+.bookingPage {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.bookingForm {
+  border: black 2px solid;
+  padding: 0vw 10vw 0vw 5vw;
+  margin: 5vw 0vw 5vw 0vw;
+  background-color: blue;
+  font-size: 1vw;
 }
