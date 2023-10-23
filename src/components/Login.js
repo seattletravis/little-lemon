@@ -25,8 +25,6 @@ function Login() {
         </div>
         <button className='loginButton'>Login</button>
       </div>
-
-
     </div>
   )
 }
