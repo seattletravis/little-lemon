@@ -50,7 +50,6 @@ function BookingForm(props) {
 
   return (
     <div className='bookingPage'>
-      <form onSubmit={handleSubmit}>
       <div className='bookingContainer'>
         <h2>reservation page</h2>
 
@@ -121,10 +120,9 @@ function BookingForm(props) {
           </textarea>
         </div>
         <div>
-          <button type="submit" className="reservationButton">Book Table</button>
+          <button type="submit" onClick={handleSubmit} className="reservationButton">Book Table</button>
         </div>
       </div>
-      </form>
     </div>
   );
 }
