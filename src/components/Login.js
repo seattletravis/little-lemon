@@ -7,7 +7,7 @@ import "../App.css"
 function Login() {
   return (
     <div className='loginPage'>
-      <h2>This is an example login page. You're info will not be saved and you will not be logged in.</h2>
+      <h2>Example login page. You're info will not be saved and you will not be logged in.</h2>
       <div className='formDiv'>
         <form className='bookingForm'>
           <div className='loginPage'>

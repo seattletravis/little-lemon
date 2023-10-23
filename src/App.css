@@ -433,7 +433,6 @@ form {
 
 .bookingForm {
   display: inline-block
-
 }
 
 .bookingPage {
@@ -522,4 +521,12 @@ form {
   border-radius: 1vw;
   margin-top: 5vw;
   margin-bottom: 2vw;
+}
+
+.confirmationHeader section {
+  align-self: center;
+}
+
+.confirmationHeader section h1, h3 {
+  margin-bottom: 1vw;
 }
