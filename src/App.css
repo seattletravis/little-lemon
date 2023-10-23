@@ -411,10 +411,6 @@ form {
   padding: 1vw 0vw 2vw 0vw;
 }
 
-.loginField label {
-
-}
-
 .loginField input {
   font-size: 1.5vw;
 }
@@ -427,5 +423,4 @@ form {
   padding: 0.5vw 1.5vw 0.5vw 1.5vw;
   border-radius: .7vw;
   margin: 1vw 0vw 6vw 0vw;
-
 }
