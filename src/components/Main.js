@@ -1,14 +1,13 @@
 import React, { useReducer, useEffect } from "react";
 import { Navigate, Route, Routes, useNavigate } from "react-router-dom";
-import Bookings from "./Bookings";
-import ConfirmedBooking from "./ConfirmedBooking";
-import Header from "./Header";
 import AboutPage from "../pages/AboutPage"
 import MenuPage from '../pages/MenuPage';
 import OrderPage from '../pages/OrderPage';
 import LoginPage from '../pages/LoginPage';
 import HomePage from '../pages/HomePage';
-import ReservationsPage from '../pages/ReservationsPage';
+import Confirmation from './Confirmation';
+import ReservationsPage from '../pages/BookingPage';
+
 
 
 
@@ -52,7 +51,7 @@ function Main() {
     const navigate = useNavigate();
     function submitForm (formData) {
         if (submitAPI(formData)) {
-            navigate("/confirmed")
+            navigate("/confirmation")
         }
     }
 
@@ -68,7 +67,7 @@ function Main() {
                     <Route path="/reservations" element={<ReservationsPage />} />
                     <Route exact path="/order" element={<OrderPage />} />
                     <Route exact path="/login" element={<LoginPage />} />
-                    <Route path="/confirmation" element={<ConfirmedBooking/> } />
+                    <Route path="/confirmation" element={<Confirmation/> } />
                 </Routes>
             </main>
         </div>

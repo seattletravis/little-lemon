@@ -1,10 +1,13 @@
 import NavigationBar from '../components/NavigationBar';
+import Login from '../components/Login'
+import Footer from '../components/Footer';
 
 function LoginPage() {
   return (
     <div>
       <NavigationBar />
-      <div>Login Page</div>
+      <Login />
+      <Footer />
     </div>
   )
 }
