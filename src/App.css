@@ -431,11 +431,8 @@ form {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin-right: 25vw;
-}
-
-.bookingPageTitle {
-  margin-left: 25VW;
+  margin-right: auto;
+  margin-left: auto;
 }
 
 .bookingPage h2 {
@@ -458,7 +455,7 @@ form {
 
 .bookingContainer div input {
   width: 25vw;
-  font-size: 1.5vw;
+  font-size: 1vw;
 }
 
 .reservationButton {

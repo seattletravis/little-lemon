@@ -115,7 +115,7 @@ function BookingForm(props) {
         </div>
         <div>
           <label htmlFor="comments">Personal preferences/accommodations</label> <br></br>
-          <textarea  className='occasion' id="comments" rows={8} placeholder="Additional Comments"
+          <textarea  className='occasion' id="comments" rows={8} placeholder="Can I bring my dog?"
           value={comments}
           onChange={e => setComments(e.target.value)}>
           </textarea>
