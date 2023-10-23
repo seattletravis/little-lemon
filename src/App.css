@@ -442,6 +442,12 @@ form {
 
 .bookingPage h2 {
   font-size: 2vw;
+  padding-top: 2vw;
+  padding-bottom: 2vw;
+}
+
+.reserveIcon {
+  font-size: 7vw;
 }
 
 .bookingContainer {
@@ -449,12 +455,12 @@ form {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  border: black 2px solid;
   padding: 0vw 5vw 0vw 5vw;
   margin: 5vw 0vw 5vw 0vw;
   background-color: #495e57;
+  border-radius: .7vw;
   font-size: 1vw;
-  color: white;
+  color: #d9d9d9;
   width: 25vw;
 }
 

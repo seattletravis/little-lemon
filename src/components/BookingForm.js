@@ -1,6 +1,7 @@
 import {useState} from 'react';
 import qs from 'qs'
 import axios from "axios";
+import { MdOutlineTableRestaurant } from 'react-icons/md'
 
 function BookingForm(props) {
   const handleSubmit = async (e) => {
@@ -52,7 +53,7 @@ function BookingForm(props) {
     <div className='bookingPage'>
       <div className='bookingContainer'>
         <h2>reservation page</h2>
-
+        <MdOutlineTableRestaurant className='reserveIcon'/>
         <div>
           <label htmlFor="firstName">First Name</label> <br></br>
           <input type="text" id="firstName" placeholder="First Name"
