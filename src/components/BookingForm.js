@@ -49,6 +49,8 @@ function BookingForm(props) {
 
 
   return (
+    <div className='loginPage'>
+    <h2>Example reservation page. You're info will not be saved and you will not be given a table reservation.</h2>
     <div className='formDiv'>
       <form className="bookingForm" onSubmit={handleSubmit}>
         <div className='bookingPage'>
@@ -129,6 +131,7 @@ function BookingForm(props) {
           </div>
         </div>
       </form>
+    </div>
     </div>
   );
 }
