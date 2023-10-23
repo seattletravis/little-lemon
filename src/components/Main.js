@@ -9,11 +9,9 @@ import Confirmation from './Confirmation';
 import BookingPage from '../pages/BookingPage';
 
 
-
-
 function Main() {
 
-    const seededRandom = function (seed) {
+    const randomSeed = function (seed) {
         var m = 2**35 - 31;
         var a = 185852;
         var s = seed % m;
@@ -22,9 +20,9 @@ function Main() {
         };
     }
 
-    const fetchAPI = function(date) {
+    const fetchData = function(date) {
         let result = [];
-        let random = seededRandom(date.getDate());
+        let random = randomSeed(date.getDate());
 
         for(let i = 17; i <= 23; i++) {
             if(random() < 0.5) {
@@ -42,11 +40,11 @@ function Main() {
         return true;
     };
 
-    const initializeTimes = {availableTimes:  fetchAPI(new Date())}
+    const initializeTimes = {availableTimes:  fetchData(new Date())}
     const [state, dispatch] = useReducer(updateTimes, initializeTimes);
 
     function updateTimes(date) {
-        return {availableTimes: fetchAPI(new Date(date))}
+        return {availableTimes: fetchData(new Date(date))}
     }
     const navigate = useNavigate();
     function submitForm (formData) {
