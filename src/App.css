@@ -429,14 +429,48 @@ form {
 .bookingPage {
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
+  align-items: center;
+  margin-right: 25vw;
 }
 
-.bookingForm {
+.bookingPageTitle {
+  margin-left: 25VW;
+}
+
+.bookingPage h2 {
+  font-size: 2vw;
+}
+
+.bookingContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
   border: black 2px solid;
-  padding: 0vw 10vw 0vw 5vw;
+  padding: 0vw 5vw 0vw 5vw;
   margin: 5vw 0vw 5vw 0vw;
-  background-color: blue;
+  background-color: #495e57;
   font-size: 1vw;
+  color: white;
+  width: 25vw;
+}
+
+.bookingContainer div input {
+  width: 25vw;
+  font-size: 1.5vw;
+}
+
+.reservationButton {
+  color: black;
+  font-size: 1vw;
+  font-weight: 500;
+  background-color: #f4ce14;
+  padding: 0.5vw 1.5vw 0.5vw 1.5vw;
+  border-radius: .7vw;
+  margin: 1vw 0vw 6vw 0vw;
+}
+
+.occasion {
+  width: 25vw;
 }
