@@ -55,8 +55,6 @@ function Main() {
         }
     }
 
-    console.log(initializeTimes)
-
     return(
         <div>
             <main>

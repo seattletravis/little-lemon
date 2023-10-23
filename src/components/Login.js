@@ -19,11 +19,11 @@ function Login() {
               <div>
                 <div className='loginField'>
                   <label htmlFor="">Email</label>
-                  <input type="email" placeholder="Email"/>
+                  <input type="email" placeholder="Email" required/>
                 </div>
                 <div className='loginField'>
                   <label htmlFor="">Password</label>
-                  <input type="password" placeholder="Password"/>
+                  <input type="password" placeholder="Password" required/>
                 </div>
               </div>
               <button type="submit" className='loginButton'>Login</button>
