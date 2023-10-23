@@ -2,7 +2,7 @@ import {useState} from 'react';
 import qs from 'qs'
 import axios from "axios";
 
-export default function ReservationForm(props) {
+function BookingForm(props) {
     const handleSubmit = async (e) => {
         e.preventDefault();
         const info = {
@@ -148,3 +148,5 @@ export default function ReservationForm(props) {
        </form>
     );
 }
+
+export default BookingForm;

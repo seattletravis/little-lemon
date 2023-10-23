@@ -14,15 +14,14 @@ function BookingPage() {
     }
 
     const output = fetchAPI(new Date());
-
     const [availableTimes, dispatch] = useReducer(updateTimes, output);
 
     return (
-        <>
+        <div>
             <NavigationBar />
             <BookingForm availableTimes={availableTimes} updateTimes={dispatch}/>
             <Footer />
-        </>
+        </div>
     );
 }
 
