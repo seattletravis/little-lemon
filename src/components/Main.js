@@ -6,7 +6,7 @@ import OrderPage from '../pages/OrderPage';
 import LoginPage from '../pages/LoginPage';
 import HomePage from '../pages/HomePage';
 import Confirmation from './Confirmation';
-import ReservationsPage from '../pages/BookingPage';
+import BookingPage from '../pages/BookingPage';
 
 
 
@@ -22,7 +22,7 @@ function Main() {
         };
     }
 
-    const fetchData = function(date) {
+    const fetchAPI = function(date) {
         let result = [];
         let random = seededRandom(date.getDate());
 
@@ -38,15 +38,15 @@ function Main() {
     };
 
 
-    const submitAPI = function(formData) {
+    const submitAPI = function() {
         return true;
     };
 
-    const initializeTimes = {availableTimes:  fetchData(new Date())}
+    const initializeTimes = {availableTimes:  fetchAPI(new Date())}
     const [state, dispatch] = useReducer(updateTimes, initializeTimes);
 
-    function updateTimes(state, date) {
-        return {availableTimes: fetchData(new Date(date))}
+    function updateTimes(date) {
+        return {availableTimes: fetchAPI(new Date(date))}
     }
     const navigate = useNavigate();
     function submitForm (formData) {
@@ -62,7 +62,7 @@ function Main() {
                     <Route exact path="/" element={<HomePage />} />
                     <Route exact path="/about" element={<AboutPage />} />
                     <Route exact path="/menu" element={<MenuPage />} />
-                    <Route path="/reservations" element={<ReservationsPage />} />
+                    <Route path="/reservations" element={<BookingPage availableTimes={state} dispatch={dispatch} submitForm={submitForm}/>} />
                     <Route exact path="/order" element={<OrderPage />} />
                     <Route exact path="/login" element={<LoginPage />} />
                     <Route path="/confirmation" element={<Confirmation/> } />

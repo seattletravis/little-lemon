@@ -1,5 +1,4 @@
 import bgImage from "../images/lemon dessert.jpg"
-import image1 from "../images/bruchetta.svg"
 import image2 from "../images/food1.avif"
 import image3 from "../images/restaurant chef B.jpg"
 import image4 from "../images/restauranfood.jpg"
