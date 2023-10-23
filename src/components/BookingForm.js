@@ -7,10 +7,10 @@ function BookingForm(props) {
   const handleSubmit = async (e) => {
     e.preventDefault();
     const info = {
-      first_name: fName,
-      last_name: lName,
+      first_name: firstName,
+      last_name: lastName,
       email: email,
-      phone_number: tel,
+      phone_number: phone,
       people: people,
       date: date,
       time: "18:00",
@@ -23,10 +23,10 @@ function BookingForm(props) {
       window.location.replace('http://localhost:3000/confirmation');
   };
 
-  const [fName, setFName] = useState("");
-  const [lName, setLName] = useState("");
+  const [firstName, setFName] = useState("");
+  const [lastName, setLName] = useState("");
   const [email, setEmail] = useState("");
-  const [tel, setTel] = useState("");
+  const [phone, setPhone] = useState("");
   const [people, setPeople] = useState(1);
   const [date, setDate] = useState("");
   const [occasion, setOccasion] = useState("");
@@ -58,14 +58,14 @@ function BookingForm(props) {
           <label htmlFor="firstName">First Name</label> <br></br>
           <input type="text" id="firstName" placeholder="First Name"
           required minLength={2} maxLength={50}
-          value={fName}
+          value={firstName}
           onChange={e => setFName(e.target.value)}></input>
         </div>
         <div>
           <label htmlFor="lastName">Last Name</label> <br></br>
           <input type="text" id="lastName" placeholder="Last Name"
           minLength={2} maxLength={50}
-          value={lName}
+          value={lastName}
           onChange={e => setLName(e.target.value)}></input>
         </div>
         <div>
@@ -78,9 +78,9 @@ function BookingForm(props) {
         <div>
           <label htmlFor="phoneNumber">Phone Number</label> <br></br>
           <input type="tel" id="phoneNumber" placeholder="(xxx)-xxx-xxxx"
-          value={tel}
+          value={phone}
           required minLength={10} maxLength={25}
-          onChange={e => setTel(e.target.value)}></input>
+          onChange={e => setPhone(e.target.value)}></input>
         </div>
         <div>
           <label htmlFor="people">Number of People</label> <br></br>

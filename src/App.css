@@ -467,10 +467,12 @@ form {
 .bookingContainer div input {
   width: 25vw;
   font-size: 1vw;
+  color: #495e57;
+
 }
 
 .reservationButton {
-  color: black;
+  color: #495e57;
   font-size: 1vw;
   font-weight: 500;
   background-color: #f4ce14;
