@@ -1,3 +1,10 @@
+# Little Lemon Capstone Project by Travis Lamberte
+
+This is the final project in the Meta Front-End Developer Professional Certification. I designed this webpage using my knowledge and skills in React, JavaScript, CSS, and UX/UI design. This [age will be accessible at https://designzesty.com and there will be a link on my portfolio site at https://lambertedesign.com come take a look. 
+
+As a React Frontend developer I used this course to audit my skills and knowledge of the React Frontend fundamentals. Although I'm learning more every day I feel like I'm at a point now that I can code in React with confidence. I am currently looking for a position as a software developer. 
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
