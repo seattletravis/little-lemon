@@ -412,8 +412,9 @@ form {
   padding: 1vw 0vw 2vw 0vw;
 }
 
-.loginField input {
+.loginField input, select, textarea {
   font-size: 1.5vw;
+  color: #495e57;
 }
 
 .loginButton {
@@ -426,6 +427,16 @@ form {
   margin: 1vw 0vw 6vw 0vw;
 }
 
+.formDiv {
+  display: block;
+  text-align: center;
+}
+
+.bookingForm {
+  display: inline-block
+
+}
+
 .bookingPage {
   display: flex;
   flex-direction: column;
@@ -435,10 +446,7 @@ form {
   margin-left: auto;
 }
 
-.bookingPage form {
-  background-color: blue;
-  width: 25vw;
-}
+
 
 .bookingPage h2 {
   font-size: 2vw;
@@ -448,6 +456,7 @@ form {
 
 .reserveIcon {
   font-size: 7vw;
+  margin-bottom: 1vw;
 }
 
 .bookingContainer {
@@ -464,10 +473,12 @@ form {
   width: 25vw;
 }
 
-.bookingContainer div input {
+.bookingContainer div input, select, textarea {
   width: 25vw;
   font-size: 1vw;
   color: #495e57;
+  margin-bottom: 1vw;
+  
 
 }
 
@@ -483,4 +494,20 @@ form {
 
 .occasion {
   width: 25vw;
+  margin-bottom: 1vw;
+  font-size: 1vw;
+
+}
+
+.timeOccasion {
+  width: 25vw;
+  margin-bottom: 1vw;
+}
+
+
+
+.timeOccasion select {
+  font-size: 1vw;
+  margin-bottom: 1vw;
+  color: #495e57;
 }
